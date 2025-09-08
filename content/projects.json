@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Weather Web App",
+    "slug": "weather-web-app",
+    "cover": "/src/assets/weather-bg.png",
+    "tags": [
+      "weather",
+      "api",
+      "react",
+      "responsive"
+    ],
+    "summary": "A polished weather app with current conditions, 7-day forecast, and animated backgrounds.",
+    "body": "This Weather Web App allows users to search by city or use their current location to get detailed weather information including temperature, humidity, wind, sunrise/sunset times, and a 7-day forecast. It features a Celsius/Fahrenheit toggle and animated backgrounds that adapt to weather conditions.",
+    "tech": [
+      "React",
+      "Tailwind",
+      "OpenWeather API",
+      "Framer Motion"
+    ],
+    "links": {
+      "live": "#",
+      "repo": "#"
+    },
+    "metrics": {
+      "stars": 0,
+      "users": 0
+    }
+  }
+]
