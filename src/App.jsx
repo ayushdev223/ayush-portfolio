@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
 import Login from './pages/Login'
+
 import WeatherApp from './components/WeatherApp'
 import './styles.css'
 import projects from '../content/projects.json'
@@ -13,7 +14,7 @@ import heroBg from './assets/hero-bg.png'
 
 export default function App(){
   const [view, setView] = useState('home') // home | projects | about | login
-  const [theme, setTheme] = useState('dark')
+
   const [showModal, setShowModal] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
   const [showBackToTop, setShowBackToTop] = useState(false)
@@ -26,11 +27,7 @@ export default function App(){
   const aboutRef = useRef(null)
   const contactRef = useRef(null)
 
-  // Theme effect
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme)
-    localStorage.setItem('theme', theme)
-  }, [theme])
+
 
   // Scroll listener for back-to-top and progress
   useEffect(() => {
@@ -141,7 +138,7 @@ export default function App(){
         ))}
       </div>
 
-      <Header onNav={handleNav} theme={theme} toggleTheme={toggleTheme} />
+      <Header onNav={handleNav} />
       <AnimatePresence mode="wait" initial={false}>
         {view === 'login' ? (
           <motion.div
