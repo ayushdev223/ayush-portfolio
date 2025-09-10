@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import profileImg from '../assets/profile.png'
 
-export default function Header({onNav, theme, toggleTheme}){
+export default function Header({onNav}){
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
@@ -71,13 +71,14 @@ export default function Header({onNav, theme, toggleTheme}){
           >
             Resume
           </motion.a>
-          <button
+          {/* Removed theme toggle button as per user request */}
+          {/* <button
             onClick={toggleTheme}
             className="ml-4 px-4 py-2 rounded-lg bg-white/10 text-white hover:bg-white/20 transition"
             aria-label="Toggle dark mode"
           >
             {theme === 'dark' ? '🌞' : '🌙'}
-          </button>
+          </button> */}
         </motion.nav>
         <motion.div
           className="md:hidden"
@@ -139,13 +140,14 @@ export default function Header({onNav, theme, toggleTheme}){
             >
               Resume
             </motion.a>
-            <button
+            {/* Removed mobile theme toggle button as per user request */}
+            {/* <button
               onClick={() => { toggleTheme(); setIsMenuOpen(false); }}
               className="px-4 py-2 rounded-lg bg-white/10 text-white hover:bg-white/20 transition text-left"
               aria-label="Toggle dark mode"
             >
               {theme === 'dark' ? '🌞 Light Mode' : '🌙 Dark Mode'}
-            </button>
+            </button> */}
           </div>
         </motion.nav>
       )}

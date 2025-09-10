@@ -73,14 +73,15 @@ export default function Hero({onViewProject}){
             >
               Download resume
             </motion.a>
-            <motion.button
+            {/* Removed View flagship project button as per user request */}
+            {/* <motion.button
               onClick={onViewProject}
               className="btn btn-ghost"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               View flagship project
-            </motion.button>
+            </motion.button> */}
             <motion.a
               href="https://github.com/ayushdev223"
               target="_blank"
